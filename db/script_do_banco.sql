@@ -139,7 +139,7 @@ insert into foto(fotos,destaque) values ('hamburguer12.png',"sim");
 insert into foto(fotos,destaque) values ('hamburguer13.png',"nao");
 
 insert into produto(nomeproduto, descricao, preco, idfoto)values('Calabria','Lanche com cheedar, calabresa e salada',17.99,1);
-insert into produto(nomeproduto, descricao, preco, idfoto)values('Braziian Steak','Lanche com queijo, hambúrguer, cheedar e bacon',19.50,2);
+insert into produto(nomeproduto, descricao, preco, idfoto)values('Brazilian Steak','Lanche com queijo, hambúrguer, cheedar e bacon',19.50,2);
 insert into produto(nomeproduto, descricao, preco, idfoto)values('Veggie Burguer','Lanche com molho verde, hambúrguer de soja e salada',19.99,3);
 insert into produto(nomeproduto, descricao, preco, idfoto)values('Sidney Cheddar','Lanche com queijo, hambúrguer, bacon, cebola e salada',22.00,4);
 insert into produto(nomeproduto, descricao, preco, idfoto)values('Premium Burguer','Lanche com queijo, hambúrguer, cebola e molho verde',20.99,5);

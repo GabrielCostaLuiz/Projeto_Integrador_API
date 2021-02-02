@@ -55,19 +55,19 @@ public $produtos;
         // Realizando a insersão dos produtos na tabela de itens pedidos
         //vamos separar o id do produto da quantidade e realiza o cadastros
         //destes dois campos
-      //$array = $this->produtos;
+      $array = $this->produtos;
 
       //vamos saber quantos produtos veem do array
-      //$qtd = count($array);
+      $qtd = count($array);
       
-    //   for($i = 0; $i < $qtd; $i++){
-    //     $queryItens = "insert into itenspedido set idpedido=:ipe, idproduto=:ipr, quantidade=:q";
-    //     $stmtItens = $this->conexao->prepare($queryItens);
-    //     $stmtItens->bindParam(":ipe",$this->idpedido);
-    //     $stmtItens->bindParam(":ipr",$this->produtos[$i]->idproduto);
-    //     $stmtItens->bindParam(":q",$this->produtos[$i]->quantidade);
-    //     $stmtItens->execute();
-    //   }
+      for($i = 0; $i < $qtd; $i++){
+        $queryItens = "insert into itenspedido set idpedido=:ipe, idproduto=:ipr, quantidade=:q";
+        $stmtItens = $this->conexao->prepare($queryItens);
+        $stmtItens->bindParam(":ipe",$this->idpedido);
+        $stmtItens->bindParam(":ipr",$this->produtos[$i]->idproduto);
+        $stmtItens->bindParam(":q",$this->produtos[$i]->quantidade);
+        $stmtItens->execute();
+      }
 
 
         $query = "insert into pagamento set idpedido=:ip, tipo=:t,descricao=:d,valor=:v,parcelas=:p,valorparcela=:vp";

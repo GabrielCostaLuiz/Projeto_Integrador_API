@@ -40,7 +40,8 @@ $pagamento->valor=$data->valor;
 $pagamento->parcelas=$data->parcelas;
 $pagamento->valorparcela=$data->valorparcela;
 $pagamento->idcliente=$data->idcliente;
-//$pagamento->produtos=$data->produtos;
+$pagamento->produtos=$data->produtos;
+
 
     if($pagamento->cadastro()){
         header("HTTP/1.0 201");
@@ -55,5 +56,4 @@ else{
     header("HTTP/1.0 400");
     echo json_encode(array("mensagem"=>"Você precisa preencher todos os campos"));
 }
-
 ?>
