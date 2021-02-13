@@ -157,3 +157,4 @@ insert into pedido(idcliente) values(1);
 insert into itenspedido(idpedido,idproduto,quantidade)values(1,4,2);
 
 insert into pagamento(idpedido,tipo,descricao,valor,parcelas,valorparcela)values(1,'Débito','Nº 2235|Nome:Gabriel|Codigo: 756',22.00,2,11.00);
+
